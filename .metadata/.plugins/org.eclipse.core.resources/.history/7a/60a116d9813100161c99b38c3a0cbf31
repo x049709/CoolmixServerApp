@@ -1,0 +1,45 @@
+
+package com.coolmix.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import com.coolmix.service.GSRService;
+
+
+import com.coolmix.model.Gsr;
+
+@Service("gsrService")
+@Transactional
+public class GSRServiceImpl implements GSRService{
+
+	private static final AtomicLong counter = new AtomicLong();     
+	private JdbcTemplate jdbcTemplateObject;
+	private List<Gsr> gsrList;
+
+	public List<Gsr> findAllGsrs() {
+		
+		String sql = "SELECT * FROM gsr";
+		
+		gsrList  = (ArrayList<Gsr>)jdbcTemplateObject.query(sql,
+				new BeanPropertyRowMapper(Gsr.class));
+				
+		return gsrList;
+	}
+
+	public Gsr findById(int id) {
+		for(Gsr gsr : gsrList){
+			if(gsr.getId() == id){
+				return gsr;
+			}
+		}
+		return null;
+	}
+
+
+}

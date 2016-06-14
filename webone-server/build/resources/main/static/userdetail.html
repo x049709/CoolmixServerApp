@@ -1,0 +1,30 @@
+<div  id="userDetailDiv" ng-show="selectedUser" class="table-responsive">
+	<div ng-model="selectedUser" id="userDetailTableDiv">
+    	<h4>Axon User Detail for {{selectedUser.fname + ' ' + selectedUser.lname}}</h4>
+      	<table id="userDetailTable" class="table table-striped table-bordered table-condensed table-hover table-scrollable">
+      		<thead>
+        		<tr>
+          			<th>User ID</th>
+          			<th>First Name</th>
+          			<th>Last Name</th>
+          			<th>Email Address</th>
+          			<th>Date of Birth</th>
+          			<th>SSN</th>
+          			<th>Employee #</th>
+        		</tr>
+      		</thead>
+      		<tbody>
+        		<tr>
+        			<td><a data-toggle="pill" href="" ng-click="editUser(selectedUser)">{{selectedUser.user_id}}</a></td>
+        			<td>{{selectedUser.fname}}</td>
+        			<td>{{selectedUser.lname}}</td>
+        			<td>{{selectedUser.email}}</td>
+        			<td>{{selectedUser.dob}}</td>
+        			<td>{{selectedUser.ssn}}</td>
+        			<td>{{selectedUser.emplid}}</td>
+        		</tr>
+      		</tbody>
+      	</table>
+  	</div>
+  	<div ng-include="'userdetailform.html'"></div>
+</div>

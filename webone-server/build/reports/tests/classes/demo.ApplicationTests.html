@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class demo.ApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class demo.ApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/demo.html">demo</a> &gt; ApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.872s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">homePageLoads</td>
+<td>0.160s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">loginRedirects</td>
+<td>0.141s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">resourceEndpointProtected</td>
+<td>0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">userEndpointProtected</td>
+<td>0.548s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>22:57:02.234 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class demo.ApplicationTests].
+22:57:02.251 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+22:57:02.296 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@29380ec9 declaringClass = 'demo.ApplicationTests', classes = '{class demo.UiApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+22:57:02.312 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [demo.ApplicationTests]
+22:57:02.324 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+22:57:02.326 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+22:57:02.327 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@1ef45730, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@24b9e845, org.springframework.test.context.support.DirtiesContextTestExecutionListener@575f7465]
+22:57:02.332 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:57:02.335 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:57:02.349 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:57:02.350 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:57:02.352 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:57:02.353 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:57:02.357 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:57:02.359 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:57:03.397 [Test worker] DEBUG o.s.test.util.ReflectionTestUtils - Getting field [mergedContextConfiguration] from target [[DefaultTestContext@6e3e62e1 testClass = ApplicationTests, testInstance = demo.ApplicationTests@7236d4c5, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@136f7179 testClass = ApplicationTests, locations = '{}', classes = '{class demo.UiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]]
+22:57:03.404 [Test worker] DEBUG o.s.test.util.ReflectionTestUtils - Setting field [propertySourceProperties] of type [null] on target [[WebMergedContextConfiguration@136f7179 testClass = ApplicationTests, locations = '{}', classes = '{class demo.UiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] to value [[Ljava.lang.String;@5e2be388]
+22:57:03.405 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@6e3e62e1 testClass = ApplicationTests, testInstance = demo.ApplicationTests@7236d4c5, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@136f7179 testClass = ApplicationTests, locations = '{}', classes = '{class demo.UiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{server.port:0, org.springframework.boot.test.IntegrationTest=true}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+22:57:03.661 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+22:57:03.665 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+22:57:03.667 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+22:57:03.669 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+2015-12-09 22:57:04.260  INFO 85128 --- [    Test worker] o.s.boot.SpringApplication               : Starting application on EdBayudansMini.home with PID 85128 (/Users/x049709/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.2.4.RELEASE/231f740ec1e7b2b89cb9accef516cb02eb2db44d/spring-boot-1.2.4.RELEASE.jar started by x049709 in /Users/x049709/Documents/STSThirteenWorkspace/oauth-microservices/client/webone-server)
+2015-12-09 22:57:04.335  INFO 85128 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@369b1774: startup date [Wed Dec 09 22:57:04 EST 2015]; root of context hierarchy
+2015-12-09 22:57:04.744  INFO 85128 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-12-09 22:57:05.268  INFO 85128 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'encrypt.CONFIGURATION_PROPERTIES' of type [class org.springframework.cloud.bootstrap.encrypt.KeyProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-12-09 22:57:05.272  INFO 85128 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'encryptionBootstrapConfiguration' of type [class org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration$$EnhancerBySpringCGLIB$$1c4021af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-12-09 22:57:05.459  INFO 85128 --- [    Test worker] o.s.boot.SpringApplication               : Started application in 1.656 seconds (JVM running for 5.419)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.4.RELEASE)
+
+2015-12-09 22:57:05.786  INFO 85128 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5db096b0: startup date [Wed Dec 09 22:57:05 EST 2015]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@369b1774
+2015-12-09 22:57:07.721  INFO 85128 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-12-09 22:57:07.781  INFO 85128 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+2015-12-09 22:57:07.948  INFO 85128 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'infoEndpoint': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointAutoConfiguration; factoryMethodName=infoEndpoint; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointAutoConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$InfoEndpointRebinderConfiguration; factoryMethodName=infoEndpoint; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/autoconfigure/RefreshAutoConfiguration$InfoEndpointRebinderConfiguration.class]]
+2015-12-09 22:57:08.005  INFO 85128 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'scopedTarget.oauth2ClientContext': replacing [Root bean: class [null]; scope=session; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.security.oauth2.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientContextConfiguration; factoryMethodName=oauth2ClientContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/security/oauth2/config/annotation/web/configuration/OAuth2ClientConfiguration$OAuth2ClientContextConfiguration.class]] with [Root bean: class [null]; scope=session; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.cloud.security.oauth2.client.OAuth2ClientAutoConfiguration$SessionScopedConfiguration; factoryMethodName=oauth2ClientContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/security/oauth2/client/OAuth2ClientAutoConfiguration$SessionScopedConfiguration.class]]
+2015-12-09 22:57:08.008  INFO 85128 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'oauth2ClientContext': replacing [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/security/oauth2/config/annotation/web/configuration/OAuth2ClientConfiguration$OAuth2ClientContextConfiguration.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/cloud/security/oauth2/client/OAuth2ClientAutoConfiguration$SessionScopedConfiguration.class]]
+2015-12-09 22:57:08.459  INFO 85128 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d54a2619-e9c7-335e-80a8-d19a1448595b
+2015-12-09 22:57:08.480  INFO 85128 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-12-09 22:57:09.249  INFO 85128 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration$$EnhancerBySpringCGLIB$$4c76e48c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-12-09 22:57:09.992  INFO 85128 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2015-12-09 22:57:10.434  INFO 85128 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-12-09 22:57:10.444  INFO 85128 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2015-12-09 22:57:10.689  INFO 85128 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-12-09 22:57:10.690  INFO 85128 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4904 ms
+2015-12-09 22:57:14.077  WARN 85128 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2015-12-09 22:57:14.078  INFO 85128 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2015-12-09 22:57:14.093  INFO 85128 --- [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@de1ab10
+2015-12-09 22:57:15.411  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/pause],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2015-12-09 22:57:15.412  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/autoconfig],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.415  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/mappings],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.416  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/beans],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.416  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/trace],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.418  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2015-12-09 22:57:15.420  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.421  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/hystrix.stream/**],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2015-12-09 22:57:15.423  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/configprops],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.425  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/refresh],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2015-12-09 22:57:15.426  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/archaius],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.427  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/resume],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2015-12-09 22:57:15.428  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2015-12-09 22:57:15.430  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/reset],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.util.Map&lt;java.lang.String, java.lang.Object&gt; org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2015-12-09 22:57:15.433  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/restart],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2015-12-09 22:57:15.434  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/dump],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.437  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/routes],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.util.Map&lt;java.lang.String, java.lang.String&gt; org.springframework.cloud.netflix.zuul.RoutesEndpoint.reset()
+2015-12-09 22:57:15.438  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/routes],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.util.Map&lt;java.lang.String, java.lang.String&gt; org.springframework.cloud.netflix.zuul.RoutesEndpoint.getRoutes()
+2015-12-09 22:57:15.440  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/health],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2015-12-09 22:57:15.442  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2015-12-09 22:57:15.455  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.456  INFO 85128 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/info],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:57:15.671 DEBUG 85128 --- [ost-startStop-1] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {org.springframework.security.config.annotation.web.servlet.configuration.WebMvcSecurityConfiguration=org.springframework.security.config.annotation.web.servlet.configuration.WebMvcSecurityConfiguration$$EnhancerBySpringCGLIB$$e674576@4023ed25, org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$WebMvcSecurityConfigurationConditions$DefaultWebMvcSecurityConfiguration=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$WebMvcSecurityConfigurationConditions$DefaultWebMvcSecurityConfiguration$$EnhancerBySpringCGLIB$$8c8bfe67@476f731a}
+2015-12-09 22:57:15.704  INFO 85128 --- [ost-startStop-1] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 4f29a4cf-9442-4a6d-8ccb-3475cb293df3
+
+2015-12-09 22:57:15.842  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2015-12-09 22:57:15.842  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2015-12-09 22:57:15.842  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2015-12-09 22:57:15.843  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2015-12-09 22:57:15.844  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2015-12-09 22:57:15.903 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/hystrix.stream']
+2015-12-09 22:57:15.906 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/hystrix.stream/**']
+2015-12-09 22:57:15.907 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/hystrix.stream.*']
+2015-12-09 22:57:15.908 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/health']
+2015-12-09 22:57:15.909 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/health/**']
+2015-12-09 22:57:15.910 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/health.*']
+2015-12-09 22:57:15.910 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/info']
+2015-12-09 22:57:15.911 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/info/**']
+2015-12-09 22:57:15.912 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/info.*']
+2015-12-09 22:57:15.913 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_ADMIN')', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-12-09 22:57:15.921 DEBUG 85128 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:57:15.924 DEBUG 85128 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:57:15.947  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/hystrix.stream'], Ant [pattern='/hystrix.stream/**'], Ant [pattern='/hystrix.stream.*'], Ant [pattern='/health'], Ant [pattern='/health/**'], Ant [pattern='/health.*'], Ant [pattern='/info'], Ant [pattern='/info/**'], Ant [pattern='/info.*'], Ant [pattern='/pause'], Ant [pattern='/pause/**'], Ant [pattern='/pause.*'], Ant [pattern='/autoconfig'], Ant [pattern='/autoconfig/**'], Ant [pattern='/autoconfig.*'], Ant [pattern='/mappings'], Ant [pattern='/mappings/**'], Ant [pattern='/mappings.*'], Ant [pattern='/beans'], Ant [pattern='/beans/**'], Ant [pattern='/beans.*'], Ant [pattern='/trace'], Ant [pattern='/trace/**'], Ant [pattern='/trace.*'], Ant [pattern='/env'], Ant [pattern='/env/**'], Ant [pattern='/env.*'], Ant [pattern='/configprops'], Ant [pattern='/configprops/**'], Ant [pattern='/configprops.*'], Ant [pattern='/refresh'], Ant [pattern='/refresh/**'], Ant [pattern='/refresh.*'], Ant [pattern='/archaius'], Ant [pattern='/archaius/**'], Ant [pattern='/archaius.*'], Ant [pattern='/resume'], Ant [pattern='/resume/**'], Ant [pattern='/resume.*'], Ant [pattern='/restart'], Ant [pattern='/restart/**'], Ant [pattern='/restart.*'], Ant [pattern='/dump'], Ant [pattern='/dump/**'], Ant [pattern='/dump.*'], Ant [pattern='/routes'], Ant [pattern='/routes/**'], Ant [pattern='/routes.*'], Ant [pattern='/metrics'], Ant [pattern='/metrics/**'], Ant [pattern='/metrics.*']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7241791f, org.springframework.security.web.context.SecurityContextPersistenceFilter@679da99c, org.springframework.security.web.header.HeaderWriterFilter@78a4819, org.springframework.security.web.authentication.logout.LogoutFilter@62451b61, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5e2afdf1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a0dbf00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1896aae5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e02106f, org.springframework.security.web.session.SessionManagementFilter@27c8ae61, org.springframework.security.web.access.ExceptionTranslationFilter@3b44a8e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5497ea6a]
+2015-12-09 22:57:15.978 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/logout']
+2015-12-09 22:57:15.979 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for org.springframework.security.config.annotation.web.configurers.PermitAllSupport$ExactUrlRequestMatcher@527d683c
+2015-12-09 22:57:15.980 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2015-12-09 22:57:15.980 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/**/*.html']
+2015-12-09 22:57:15.981 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/index.html']
+2015-12-09 22:57:15.982 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/home.html']
+2015-12-09 22:57:15.983 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/product.html']
+2015-12-09 22:57:15.994 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/user.html']
+2015-12-09 22:57:15.996 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login']
+2015-12-09 22:57:15.998 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-12-09 22:57:16.000 DEBUG 85128 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:57:16.002 DEBUG 85128 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:57:16.003  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7580620d, org.springframework.security.web.context.SecurityContextPersistenceFilter@70083f94, org.springframework.security.web.header.HeaderWriterFilter@4a1e093d, org.springframework.security.web.csrf.CsrfFilter@73e3840d, demo.UiApplication$SecurityConfiguration$1@7747014e, org.springframework.security.web.authentication.logout.LogoutFilter@63b80f40, org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter@4e13044f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e8db14a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64e00c47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dec5521, org.springframework.security.web.session.SessionManagementFilter@4f1908cb, org.springframework.security.web.access.ExceptionTranslationFilter@2eafcb64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@697944a8]
+2015-12-09 22:57:16.010 DEBUG 85128 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasAnyRole('ROLE_USER','ROLE_ADMIN')', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-12-09 22:57:16.011 DEBUG 85128 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:57:16.011 DEBUG 85128 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:57:16.012  INFO 85128 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63b183ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d6beb72, org.springframework.security.web.header.HeaderWriterFilter@2cc0a8e8, org.springframework.security.web.authentication.logout.LogoutFilter@2b4ca46f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@95eea0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@324460c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bea198e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1406b603, org.springframework.security.web.session.SessionManagementFilter@cd79824, org.springframework.security.web.access.ExceptionTranslationFilter@53838c7d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d411c9b]
+2015-12-09 22:57:16.712  INFO 85128 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2015-12-09 22:57:16.717  INFO 85128 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-12-09 22:57:16.718  INFO 85128 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-12-09 22:57:16.718  INFO 85128 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'OAuth2ClientContextFilter' to: [/*]
+2015-12-09 22:57:16.720  INFO 85128 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2015-12-09 22:57:16.721  INFO 85128 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2015-12-09 22:57:16.725  INFO 85128 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2015-12-09 22:57:16.728  INFO 85128 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-12-09 22:57:16.769  INFO 85128 --- [ost-startStop-1] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer context listener
+2015-12-09 22:57:16.831 DEBUG 85128 --- [ost-startStop-1] o.s.security.web.FilterChainProxy        : Initializing filter 'springSecurityFilterChain'
+2015-12-09 22:57:16.832 DEBUG 85128 --- [ost-startStop-1] o.s.security.web.FilterChainProxy        : Filter 'springSecurityFilterChain' configured successfully
+2015-12-09 22:57:17.359  INFO 85128 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5db096b0: startup date [Wed Dec 09 22:57:05 EST 2015]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@369b1774
+2015-12-09 22:57:17.455  INFO 85128 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-12-09 22:57:17.456  INFO 85128 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-12-09 22:57:17.467  INFO 85128 --- [    Test worker] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: file:/Users/x049709/Documents/STSThirteenWorkspace/oauth-microservices/client/webone-server/build/resources/main/static/index.html
+2015-12-09 22:57:17.507  INFO 85128 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-12-09 22:57:17.530  INFO 85128 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09 22:57:17.532  INFO 85128 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09 22:57:17.616  INFO 85128 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09 22:57:18.049  WARN 85128 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2015-12-09 22:57:18.050  INFO 85128 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2015-12-09 22:57:18.157  INFO 85128 --- [    Test worker] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2015-12-09 22:57:18.160  INFO 85128 --- [    Test worker] c.n.h.c.m.e.HystrixMetricsPoller         : Starting HystrixMetricsPoller
+2015-12-09 22:57:18.193  INFO 85128 --- [    Test worker] ration$HystrixMetricsPollerConfiguration : Starting poller
+2015-12-09 22:57:18.209  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/axonproduct/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.209  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/axonuser/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.209  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/axonuserlist/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.210  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/axonuseradd/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.211  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/axonuserstringsave/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.211  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/axonuserasrequestsave/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.211  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/axonusersave/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.212  INFO 85128 --- [    Test worker] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2015-12-09 22:57:18.330  INFO 85128 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 55405 (http)
+2015-12-09 22:57:18.335  INFO 85128 --- [    Test worker] demo.ApplicationTests                    : Started ApplicationTests in 14.653 seconds (JVM running for 18.295)
+2015-12-09 22:57:18.587  INFO 85128 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-12-09 22:57:18.588  INFO 85128 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-12-09 22:57:18.643  INFO 85128 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 55 ms
+2015-12-09 22:57:18.672 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/css/**'
+2015-12-09 22:57:18.672 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/js/**'
+2015-12-09 22:57:18.672 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/images/**'
+2015-12-09 22:57:18.672 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/**/favicon.ico'
+2015-12-09 22:57:18.673 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/error'
+2015-12-09 22:57:18.674 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream']
+2015-12-09 22:57:18.675 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/hystrix.stream'
+2015-12-09 22:57:18.676 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream/**']
+2015-12-09 22:57:18.676 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/hystrix.stream/**'
+2015-12-09 22:57:18.676 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream.*']
+2015-12-09 22:57:18.677 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/hystrix.stream.*'
+2015-12-09 22:57:18.677 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health']
+2015-12-09 22:57:18.677 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/health'
+2015-12-09 22:57:18.678 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health/**']
+2015-12-09 22:57:18.678 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/health/**'
+2015-12-09 22:57:18.678 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health.*']
+2015-12-09 22:57:18.679 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/health.*'
+2015-12-09 22:57:18.679 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info']
+2015-12-09 22:57:18.679 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/info'
+2015-12-09 22:57:18.679 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info/**']
+2015-12-09 22:57:18.680 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/info/**'
+2015-12-09 22:57:18.680 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info.*']
+2015-12-09 22:57:18.681 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/info.*'
+2015-12-09 22:57:18.681 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause']
+2015-12-09 22:57:18.682 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/pause'
+2015-12-09 22:57:18.682 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause/**']
+2015-12-09 22:57:18.683 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/pause/**'
+2015-12-09 22:57:18.683 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause.*']
+2015-12-09 22:57:18.684 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/pause.*'
+2015-12-09 22:57:18.684 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig']
+2015-12-09 22:57:18.684 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/autoconfig'
+2015-12-09 22:57:18.685 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig/**']
+2015-12-09 22:57:18.686 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/autoconfig/**'
+2015-12-09 22:57:18.686 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig.*']
+2015-12-09 22:57:18.687 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/autoconfig.*'
+2015-12-09 22:57:18.687 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings']
+2015-12-09 22:57:18.688 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/mappings'
+2015-12-09 22:57:18.689 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings/**']
+2015-12-09 22:57:18.690 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/mappings/**'
+2015-12-09 22:57:18.691 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings.*']
+2015-12-09 22:57:18.691 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/mappings.*'
+2015-12-09 22:57:18.691 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans']
+2015-12-09 22:57:18.692 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/beans'
+2015-12-09 22:57:18.693 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans/**']
+2015-12-09 22:57:18.694 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/beans/**'
+2015-12-09 22:57:18.695 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans.*']
+2015-12-09 22:57:18.695 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/beans.*'
+2015-12-09 22:57:18.695 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace']
+2015-12-09 22:57:18.695 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/trace'
+2015-12-09 22:57:18.696 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace/**']
+2015-12-09 22:57:18.697 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/trace/**'
+2015-12-09 22:57:18.697 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace.*']
+2015-12-09 22:57:18.698 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/trace.*'
+2015-12-09 22:57:18.698 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env']
+2015-12-09 22:57:18.699 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/env'
+2015-12-09 22:57:18.699 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env/**']
+2015-12-09 22:57:18.700 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/env/**'
+2015-12-09 22:57:18.700 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env.*']
+2015-12-09 22:57:18.700 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/env.*'
+2015-12-09 22:57:18.700 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops']
+2015-12-09 22:57:18.700 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configprops'
+2015-12-09 22:57:18.701 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops/**']
+2015-12-09 22:57:18.701 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configprops/**'
+2015-12-09 22:57:18.701 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops.*']
+2015-12-09 22:57:18.701 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configprops.*'
+2015-12-09 22:57:18.701 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh']
+2015-12-09 22:57:18.702 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/refresh'
+2015-12-09 22:57:18.702 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh/**']
+2015-12-09 22:57:18.703 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/refresh/**'
+2015-12-09 22:57:18.703 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh.*']
+2015-12-09 22:57:18.703 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/refresh.*'
+2015-12-09 22:57:18.703 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius']
+2015-12-09 22:57:18.704 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/archaius'
+2015-12-09 22:57:18.704 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius/**']
+2015-12-09 22:57:18.704 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/archaius/**'
+2015-12-09 22:57:18.704 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius.*']
+2015-12-09 22:57:18.705 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/archaius.*'
+2015-12-09 22:57:18.705 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume']
+2015-12-09 22:57:18.705 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/resume'
+2015-12-09 22:57:18.705 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume/**']
+2015-12-09 22:57:18.706 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/resume/**'
+2015-12-09 22:57:18.706 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume.*']
+2015-12-09 22:57:18.707 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/resume.*'
+2015-12-09 22:57:18.707 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart']
+2015-12-09 22:57:18.708 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/restart'
+2015-12-09 22:57:18.708 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart/**']
+2015-12-09 22:57:18.709 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/restart/**'
+2015-12-09 22:57:18.709 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart.*']
+2015-12-09 22:57:18.709 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/restart.*'
+2015-12-09 22:57:18.709 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump']
+2015-12-09 22:57:18.709 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/dump'
+2015-12-09 22:57:18.710 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump/**']
+2015-12-09 22:57:18.710 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/dump/**'
+2015-12-09 22:57:18.715 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump.*']
+2015-12-09 22:57:18.717 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/dump.*'
+2015-12-09 22:57:18.719 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes']
+2015-12-09 22:57:18.724 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/routes'
+2015-12-09 22:57:18.727 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes/**']
+2015-12-09 22:57:18.729 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/routes/**'
+2015-12-09 22:57:18.732 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes.*']
+2015-12-09 22:57:18.735 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/routes.*'
+2015-12-09 22:57:18.736 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics']
+2015-12-09 22:57:18.737 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/metrics'
+2015-12-09 22:57:18.739 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics/**']
+2015-12-09 22:57:18.739 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/metrics/**'
+2015-12-09 22:57:18.740 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics.*']
+2015-12-09 22:57:18.740 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/metrics.*'
+2015-12-09 22:57:18.740 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:57:18.741 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/user' matched by universal pattern '/**'
+2015-12-09 22:57:18.742 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 1 of 13 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:57:18.744 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 2 of 13 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:57:18.746 DEBUG 85128 --- [o-auto-1-exec-1] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2015-12-09 22:57:18.746 DEBUG 85128 --- [o-auto-1-exec-1] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-12-09 22:57:18.751 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 3 of 13 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:57:18.752 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@779547a6
+2015-12-09 22:57:18.753 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 4 of 13 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:57:18.757 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 5 of 13 in additional filter chain; firing Filter: ''
+2015-12-09 22:57:18.772 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 6 of 13 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:57:18.772 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2015-12-09 22:57:18.774 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 7 of 13 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+2015-12-09 22:57:18.776 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 8 of 13 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:57:18.777 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 9 of 13 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:57:18.780 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 10 of 13 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:57:18.784 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@90579aae: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@2eb76: RemoteIpAddress: 127.0.0.1; SessionId: CF5A2B6203FD7B8A46FADE2FB03998E5; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:57:18.786 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 11 of 13 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:57:18.787 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 12 of 13 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:57:18.788 DEBUG 85128 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 13 of 13 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:57:18.790 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2015-12-09 22:57:18.790 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/'
+2015-12-09 22:57:18.790 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/**/*.html'
+2015-12-09 22:57:18.790 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/index.html'
+2015-12-09 22:57:18.791 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/home.html'
+2015-12-09 22:57:18.791 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/product.html'
+2015-12-09 22:57:18.791 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/user.html'
+2015-12-09 22:57:18.791 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/login'
+2015-12-09 22:57:18.792 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /user; Attributes: [authenticated]
+2015-12-09 22:57:18.792 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@90579aae: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@2eb76: RemoteIpAddress: 127.0.0.1; SessionId: CF5A2B6203FD7B8A46FADE2FB03998E5; Granted Authorities: ROLE_ANONYMOUS
+2015-12-09 22:57:18.801 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@1ef5cef4, returned: -1
+2015-12-09 22:57:18.809  INFO 85128 --- [o-auto-1-exec-1] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:57:18 EST 2015, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+2015-12-09 22:57:18.821 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:83)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:206)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at demo.UiApplication$SecurityConfiguration$1.doFilterInternal(UiApplication.java:65)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1521)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1478)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-12-09 22:57:18.839 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using Ant [pattern='/**', GET]
+2015-12-09 22:57:18.840 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/user' matched by universal pattern '/**'
+2015-12-09 22:57:18.840 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=Ant [pattern='/**/favicon.ico']]
+2015-12-09 22:57:18.840 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/**/favicon.ico'
+2015-12-09 22:57:18.840 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
+2015-12-09 22:57:18.840 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@2fbe20a5, matchingMediaTypes=[application/json], useEquals=false, ignoredMediaTypes=[*/*]]]
+2015-12-09 22:57:18.843 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.m.MediaTypeRequestMatcher      : httpRequestMediaTypes=[text/plain, application/json, application/*+json, */*]
+2015-12-09 22:57:18.843 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing text/plain
+2015-12-09 22:57:18.844 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith text/plain = false
+2015-12-09 22:57:18.844 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing application/json
+2015-12-09 22:57:18.844 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith application/json = true
+2015-12-09 22:57:18.844 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = false
+2015-12-09 22:57:18.844 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.util.matcher.AndRequestMatcher   : Did not match
+2015-12-09 22:57:18.844 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Request not saved as configured RequestMatcher did not match
+2015-12-09 22:57:18.844 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2015-12-09 22:57:18.845 DEBUG 85128 --- [o-auto-1-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost:55405/login'
+2015-12-09 22:57:18.846 DEBUG 85128 --- [o-auto-1-exec-1] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-12-09 22:57:18.846 DEBUG 85128 --- [o-auto-1-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2015-12-09 22:57:18.939 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/css/**'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/js/**'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/images/**'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/**/favicon.ico'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/error'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream']
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/hystrix.stream'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream/**']
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/hystrix.stream/**'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream.*']
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/hystrix.stream.*'
+2015-12-09 22:57:18.940 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/health'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health/**']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/health/**'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health.*']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/health.*'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/info'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info/**']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/info/**'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info.*']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/info.*'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/pause'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause/**']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/pause/**'
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause.*']
+2015-12-09 22:57:18.941 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/pause.*'
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig']
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/autoconfig'
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig/**']
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/autoconfig/**'
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig.*']
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/autoconfig.*'
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings']
+2015-12-09 22:57:18.942 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/mappings'
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings/**']
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/mappings/**'
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings.*']
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/mappings.*'
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans']
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/beans'
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans/**']
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/beans/**'
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans.*']
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/beans.*'
+2015-12-09 22:57:18.944 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/trace'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace/**']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/trace/**'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace.*']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/trace.*'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/env'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env/**']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/env/**'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env.*']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/env.*'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/configprops'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops/**']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/configprops/**'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops.*']
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/configprops.*'
+2015-12-09 22:57:18.945 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/refresh'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh/**']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/refresh/**'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh.*']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/refresh.*'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/archaius'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius/**']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/archaius/**'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius.*']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/archaius.*'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/resume'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume/**']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/resume/**'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume.*']
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/resume.*'
+2015-12-09 22:57:18.946 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/restart'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart/**']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/restart/**'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart.*']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/restart.*'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/dump'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump/**']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/dump/**'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump.*']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/dump.*'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/routes'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes/**']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/routes/**'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes.*']
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/routes.*'
+2015-12-09 22:57:18.947 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics']
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/metrics'
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics/**']
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/metrics/**'
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics.*']
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/metrics.*'
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/' matched by universal pattern '/**'
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 1 of 13 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 2 of 13 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 3 of 13 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@779547a6
+2015-12-09 22:57:18.948 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 4 of 13 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:57:18.949 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 5 of 13 in additional filter chain; firing Filter: ''
+2015-12-09 22:57:18.949 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 6 of 13 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:57:18.949 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/logout'
+2015-12-09 22:57:18.949 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 7 of 13 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 8 of 13 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 9 of 13 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 10 of 13 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@905571d8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 0CADD8FE8A297672F4C998E9E4563521; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 11 of 13 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 12 of 13 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / at position 13 of 13 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/logout'
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /; Attributes: [permitAll]
+2015-12-09 22:57:18.950 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@905571d8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 0CADD8FE8A297672F4C998E9E4563521; Granted Authorities: ROLE_ANONYMOUS
+2015-12-09 22:57:18.951 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@1ef5cef4, returned: 1
+2015-12-09 22:57:18.951 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2015-12-09 22:57:18.952 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2015-12-09 22:57:18.952 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : / reached end of additional filter chain; proceeding with original chain
+2015-12-09 22:57:19.005 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/css/**'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/js/**'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/images/**'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/**/favicon.ico'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/error'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream']
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/hystrix.stream'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream/**']
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/hystrix.stream/**'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream.*']
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/hystrix.stream.*'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health']
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/health'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health/**']
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/health/**'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health.*']
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/health.*'
+2015-12-09 22:57:19.006 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info']
+2015-12-09 22:57:19.007 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/info'
+2015-12-09 22:57:19.007 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info/**']
+2015-12-09 22:57:19.007 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/info/**'
+2015-12-09 22:57:19.007 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info.*']
+2015-12-09 22:57:19.007 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/info.*'
+2015-12-09 22:57:19.010 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause']
+2015-12-09 22:57:19.010 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/pause'
+2015-12-09 22:57:19.010 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause/**']
+2015-12-09 22:57:19.010 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/pause/**'
+2015-12-09 22:57:19.010 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause.*']
+2015-12-09 22:57:19.010 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/pause.*'
+2015-12-09 22:57:19.011 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig']
+2015-12-09 22:57:19.011 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/autoconfig'
+2015-12-09 22:57:19.011 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig/**']
+2015-12-09 22:57:19.011 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/autoconfig/**'
+2015-12-09 22:57:19.020 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig.*']
+2015-12-09 22:57:19.020 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/autoconfig.*'
+2015-12-09 22:57:19.021 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings']
+2015-12-09 22:57:19.021 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/mappings'
+2015-12-09 22:57:19.021 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings/**']
+2015-12-09 22:57:19.021 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/mappings/**'
+2015-12-09 22:57:19.021 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings.*']
+2015-12-09 22:57:19.021 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/mappings.*'
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans']
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/beans'
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans/**']
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/beans/**'
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans.*']
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/beans.*'
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace']
+2015-12-09 22:57:19.022 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/trace'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace/**']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/trace/**'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace.*']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/trace.*'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/env'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env/**']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/env/**'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env.*']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/env.*'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/configprops'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops/**']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/configprops/**'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops.*']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/configprops.*'
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh']
+2015-12-09 22:57:19.023 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/refresh'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh/**']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/refresh/**'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh.*']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/refresh.*'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/archaius'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius/**']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/archaius/**'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius.*']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/archaius.*'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/resume'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume/**']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/resume/**'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume.*']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/resume.*'
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart']
+2015-12-09 22:57:19.024 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/restart'
+2015-12-09 22:57:19.025 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart/**']
+2015-12-09 22:57:19.025 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/restart/**'
+2015-12-09 22:57:19.025 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart.*']
+2015-12-09 22:57:19.025 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/restart.*'
+2015-12-09 22:57:19.025 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump']
+2015-12-09 22:57:19.025 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/dump'
+2015-12-09 22:57:19.025 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump/**']
+2015-12-09 22:57:19.037 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/dump/**'
+2015-12-09 22:57:19.037 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump.*']
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/dump.*'
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes']
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/routes'
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes/**']
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/routes/**'
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes.*']
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/routes.*'
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics']
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/metrics'
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics/**']
+2015-12-09 22:57:19.038 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/metrics/**'
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics.*']
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/metrics.*'
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/index.html' matched by universal pattern '/**'
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 1 of 13 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 2 of 13 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 3 of 13 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:57:19.039 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 4 of 13 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:57:19.040 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 5 of 13 in additional filter chain; firing Filter: ''
+2015-12-09 22:57:19.041 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 6 of 13 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:57:19.041 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/index.html'; against '/logout'
+2015-12-09 22:57:19.041 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 7 of 13 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+2015-12-09 22:57:19.041 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 8 of 13 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:57:19.042 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 9 of 13 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:57:19.042 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 10 of 13 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:57:19.042 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.AnonymousAuthenticationToken@905571d8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 0CADD8FE8A297672F4C998E9E4563521; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:57:19.042 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 11 of 13 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:57:19.042 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 12 of 13 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:57:19.043 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html at position 13 of 13 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:57:19.043 DEBUG 85128 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /index.html reached end of additional filter chain; proceeding with original chain
+2015-12-09 22:57:19.079 DEBUG 85128 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-12-09 22:57:19.096 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2015-12-09 22:57:19.100 DEBUG 85128 --- [o-auto-1-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2015-12-09 22:57:19.100 DEBUG 85128 --- [o-auto-1-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2015-12-09 22:57:19.106 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/css/**'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/js/**'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/images/**'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/**/favicon.ico'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/error'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream']
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/hystrix.stream'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream/**']
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/hystrix.stream/**'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream.*']
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/hystrix.stream.*'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health']
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/health'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health/**']
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/health/**'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health.*']
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/health.*'
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info']
+2015-12-09 22:57:19.107 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/info'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info/**']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/info/**'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info.*']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/info.*'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/pause'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause/**']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/pause/**'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause.*']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/pause.*'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/autoconfig'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig/**']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/autoconfig/**'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig.*']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/autoconfig.*'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/mappings'
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings/**']
+2015-12-09 22:57:19.108 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/mappings/**'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings.*']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/mappings.*'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/beans'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans/**']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/beans/**'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans.*']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/beans.*'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/trace'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace/**']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/trace/**'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace.*']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/trace.*'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/env'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env/**']
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/env/**'
+2015-12-09 22:57:19.109 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env.*']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/env.*'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/configprops'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops/**']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/configprops/**'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops.*']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/configprops.*'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/refresh'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh/**']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/refresh/**'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh.*']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/refresh.*'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/archaius'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius/**']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/archaius/**'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius.*']
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/archaius.*'
+2015-12-09 22:57:19.110 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/resume'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume/**']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/resume/**'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume.*']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/resume.*'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/restart'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart/**']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/restart/**'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart.*']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/restart.*'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/dump'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump/**']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/dump/**'
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump.*']
+2015-12-09 22:57:19.111 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/dump.*'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes']
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/routes'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes/**']
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/routes/**'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes.*']
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/routes.*'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics']
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/metrics'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics/**']
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/metrics/**'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics.*']
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/metrics.*'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/login' matched by universal pattern '/**'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /login at position 1 of 13 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /login at position 2 of 13 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:57:19.112 DEBUG 85128 --- [o-auto-1-exec-3] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2015-12-09 22:57:19.113 DEBUG 85128 --- [o-auto-1-exec-3] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-12-09 22:57:19.113 DEBUG 85128 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /login at position 3 of 13 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:57:19.113 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@779547a6
+2015-12-09 22:57:19.113 DEBUG 85128 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /login at position 4 of 13 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:57:19.113 DEBUG 85128 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /login at position 5 of 13 in additional filter chain; firing Filter: ''
+2015-12-09 22:57:19.113 DEBUG 85128 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /login at position 6 of 13 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:57:19.113 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2015-12-09 22:57:19.114 DEBUG 85128 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /login at position 7 of 13 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+2015-12-09 22:57:19.114 DEBUG 85128 --- [o-auto-1-exec-3] uth2ClientAuthenticationProcessingFilter : Request is to process authentication
+2015-12-09 22:57:19.212 DEBUG 85128 --- [o-auto-1-exec-3] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-12-09 22:57:19.213 DEBUG 85128 --- [o-auto-1-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2015-12-09 22:57:19.218 DEBUG 85128 --- [o-auto-1-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost:9999/uaa/oauth/authorize?client_id=acme&amp;redirect_uri=http://localhost:55405/login&amp;response_type=code&amp;state=LO9xUd'
+2015-12-09 22:57:19.253 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/css/**'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/js/**'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/images/**'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/**/favicon.ico'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/error'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream']
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/hystrix.stream'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream/**']
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/hystrix.stream/**'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/hystrix.stream.*']
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/hystrix.stream.*'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health']
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/health'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health/**']
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/health/**'
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/health.*']
+2015-12-09 22:57:19.254 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/health.*'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/info'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info/**']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/info/**'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/info.*']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/info.*'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/pause'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause/**']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/pause/**'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/pause.*']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/pause.*'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/autoconfig'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig/**']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/autoconfig/**'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/autoconfig.*']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/autoconfig.*'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings']
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/mappings'
+2015-12-09 22:57:19.255 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings/**']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/mappings/**'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/mappings.*']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/mappings.*'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/beans'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans/**']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/beans/**'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/beans.*']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/beans.*'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/trace'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace/**']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/trace/**'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/trace.*']
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/trace.*'
+2015-12-09 22:57:19.256 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env']
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/env'
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env/**']
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/env/**'
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/env.*']
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/env.*'
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops']
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/configprops'
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops/**']
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/configprops/**'
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/configprops.*']
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/configprops.*'
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh']
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/refresh'
+2015-12-09 22:57:19.257 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh/**']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/refresh/**'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/refresh.*']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/refresh.*'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/archaius'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius/**']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/archaius/**'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/archaius.*']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/archaius.*'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/resume'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume/**']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/resume/**'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/resume.*']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/resume.*'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/restart'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart/**']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/restart/**'
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/restart.*']
+2015-12-09 22:57:19.258 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/restart.*'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/dump'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump/**']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/dump/**'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/dump.*']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/dump.*'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/routes'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes/**']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/routes/**'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/routes.*']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/routes.*'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/metrics'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics/**']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/metrics/**'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/metrics.*']
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/metrics.*'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/resource' matched by universal pattern '/**'
+2015-12-09 22:57:19.259 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 1 of 13 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 2 of 13 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 3 of 13 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@779547a6
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 4 of 13 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 5 of 13 in additional filter chain; firing Filter: ''
+2015-12-09 22:57:19.260 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 6 of 13 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/logout'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 7 of 13 in additional filter chain; firing Filter: 'OAuth2ClientAuthenticationProcessingFilter'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 8 of 13 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 9 of 13 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 10 of 13 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@6fab4e5e: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe3f86: RemoteIpAddress: 127.0.0.1; SessionId: E3335D448D0E7D442F2C0C642264D98E; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 11 of 13 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 12 of 13 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /resource at position 13 of 13 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/logout'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/**/*.html'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/index.html'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/home.html'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/product.html'
+2015-12-09 22:57:19.261 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/user.html'
+2015-12-09 22:57:19.262 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/login'
+2015-12-09 22:57:19.262 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /resource; Attributes: [authenticated]
+2015-12-09 22:57:19.262 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@6fab4e5e: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe3f86: RemoteIpAddress: 127.0.0.1; SessionId: E3335D448D0E7D442F2C0C642264D98E; Granted Authorities: ROLE_ANONYMOUS
+2015-12-09 22:57:19.262 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@1ef5cef4, returned: -1
+2015-12-09 22:57:19.264  INFO 85128 --- [o-auto-1-exec-4] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:57:19 EST 2015, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+2015-12-09 22:57:19.265 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:83)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:206)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at demo.UiApplication$SecurityConfiguration$1.doFilterInternal(UiApplication.java:65)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter.doFilter(OAuth2ClientContextFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:668)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1521)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1478)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-12-09 22:57:19.266 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using Ant [pattern='/**', GET]
+2015-12-09 22:57:19.266 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/resource' matched by universal pattern '/**'
+2015-12-09 22:57:19.266 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=Ant [pattern='/**/favicon.ico']]
+2015-12-09 22:57:19.266 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/resource'; against '/**/favicon.ico'
+2015-12-09 22:57:19.266 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
+2015-12-09 22:57:19.266 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@2fbe20a5, matchingMediaTypes=[application/json], useEquals=false, ignoredMediaTypes=[*/*]]]
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.m.MediaTypeRequestMatcher      : httpRequestMediaTypes=[text/plain, application/json, application/*+json, */*]
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing text/plain
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith text/plain = false
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing application/json
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith application/json = true
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = false
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.util.matcher.AndRequestMatcher   : Did not match
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Request not saved as configured RequestMatcher did not match
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost:55405/login'
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-12-09 22:57:19.267 DEBUG 85128 --- [o-auto-1-exec-4] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Dec 9, 2015 10:57:19 PM</p>
+</div>
+</div>
+</body>
+</html>

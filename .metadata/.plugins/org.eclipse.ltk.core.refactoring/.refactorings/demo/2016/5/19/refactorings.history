@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;jdbc-security-server&apos;&#x0A;- Original project: &apos;demo&apos;&#x0A;- Destination element: &apos;jdbc-security-server&apos;&#x0A;- Original elements:&#x0A;     mvnw&#x0A;     mvnw.cmd" description="Copy files" destination="=jdbc-security-server" element1="mvnw" element2="mvnw.cmd" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1462379396655" units="0" version="1.0"/>
+</session>

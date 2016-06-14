@@ -1,0 +1,104 @@
+package com.coolmix.model;
+import java.sql.Timestamp;
+
+public class Gsr {
+
+    private int id;
+    private String imageFilePath;
+    private String imageFileName;
+    private String description;
+    private Timestamp datecreated;
+    private Timestamp datemodified;
+ 
+    public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getImageFilePath() {
+		return imageFilePath;
+	}
+
+	public void setImageFilePath(String imageFilePath) {
+		this.imageFilePath = imageFilePath;
+	}
+
+	public String getImageFileName() {
+		return imageFileName;
+	}
+
+	public void setImageFileName(String imageFileName) {
+		this.imageFileName = imageFileName;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Timestamp getDatecreated() {
+		return datecreated;
+	}
+
+	public void setDatecreated(Timestamp datecreated) {
+		this.datecreated = datecreated;
+	}
+
+	public Timestamp getDatemodified() {
+		return datemodified;
+	}
+
+	public void setDatemodified(Timestamp datemodified) {
+		this.datemodified = datemodified;
+	}
+
+	public Gsr(){
+        id=0;
+        
+    }
+     
+    public Gsr(int id, String imageFilePath, String imageFileName, String description) {
+        this.id = id;
+        this.imageFilePath = imageFilePath;
+        this.imageFileName = imageFileName;
+        this.description = description;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + (int) (id ^ (id >>> 32));
+        return result;
+    }
+ 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Gsr other = (Gsr) obj;
+        if (id != other.id)
+            return false;
+        return true;
+    }
+ 
+    @Override
+    public String toString() {
+        return "Gsr [id=" + id + ", imageFilePath=" + imageFilePath + ", imageFileName=" + imageFileName
+                + ", description=" + description + ", + datecreated=" 
+        		+ datecreated + ", + datemodified=" + datemodified + "]";
+    }
+ 
+
+
+}

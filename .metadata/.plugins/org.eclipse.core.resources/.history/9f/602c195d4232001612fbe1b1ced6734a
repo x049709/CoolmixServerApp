@@ -1,0 +1,43 @@
+package com.coolmix.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.coolmix.service.GsrDao;
+import com.tellem.springjpa.User;
+import com.coolmix.model.Gsr;
+
+@RestController
+@RequestMapping("/v1.0/gsrApi")
+public class GSRController {
+
+	private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
+
+	@Autowired
+	private GsrDao gsrDao;
+
+
+	//-------------------Retrieve All GSRs--------------------------------------------------------
+	@RequestMapping(value = "/gsr/", method = RequestMethod.GET)
+	public ResponseEntity<List<Gsr>> listAllGsrs() {
+		List<Gsr> gsrList = gsrDao.findAll();
+		if(gsrList.isEmpty()){
+			return new ResponseEntity<List<Gsr>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
+		}
+		return new ResponseEntity<List<Gsr>>(gsrList, HttpStatus.OK);
+	}
+
+}

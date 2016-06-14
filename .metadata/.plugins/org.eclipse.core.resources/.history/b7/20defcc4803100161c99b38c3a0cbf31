@@ -1,0 +1,97 @@
+
+package com.coolmix.service;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.coolmix.model.User;
+
+@Service("userService")
+@Transactional
+public class GSRServiceImpl implements GSRService{
+
+	private static final AtomicLong counter = new AtomicLong();     
+	private static List<User> users;
+
+	static{
+		users= populateDummyUsers();
+	}
+
+	public List<User> findAllUsers() {
+		return users;
+	}
+
+	public User findById(long id) {
+		for(User user : users){
+			if(user.getId() == id){
+				return user;
+			}
+		}
+		return null;
+	}
+
+	public User findByName(String name) {
+		for(User user : users){
+			if(user.getName().equalsIgnoreCase(name)){
+				return user;
+			}
+		}
+		return null;
+	}
+
+	public void saveUser(User user) {
+		user.setId(counter.incrementAndGet());
+		users.add(user);
+	}
+
+	public void updateUser(User user) {
+		int index = users.indexOf(user);
+		users.set(index, user);
+	}
+
+	public void deleteUserById(long id) {
+
+		for (Iterator<User> iterator = users.iterator(); iterator.hasNext(); ) {
+			User user = iterator.next();
+			if (user.getId() == id) {
+				iterator.remove();
+			}
+		}
+	}
+
+	public boolean doesUserExist(User user) {
+		return findByName(user.getName())!=null;
+	}
+
+	private static List<User> populateDummyUsers(){
+		String sql = "SELECT * FROM CUSTOMER WHERE CUST_ID = ?";
+		Customer customer = (Customer)getJdbcTemplate().queryForObject(
+					sql, new Object[] { custId }, new CustomerRowMapper());
+				
+		List<User> users = new ArrayList<User>();
+		users.add(new User(counter.incrementAndGet(),"Sam",30, "sam@coolimx.com"));
+		users.add(new User(counter.incrementAndGet(),"Tom",40, "tom@coolimx.com"));
+		users.add(new User(counter.incrementAndGet(),"Jerome",45, "jerome@coolimx.com"));
+		users.add(new User(counter.incrementAndGet(),"Silvia",50, "silvia@coolimx.com"));
+		return users;
+	}
+
+	private Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+		Customer customer = new Customer();
+		customer.setCustId(rs.getInt("CUST_ID"));
+		customer.setName(rs.getString("NAME"));
+		customer.setAge(rs.getInt("AGE"));
+		return customer;
+}
+
+
+	public void deleteAllUsers() {
+		users.clear();
+	}
+
+}

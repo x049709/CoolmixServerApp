@@ -1,0 +1,4 @@
+spring.datasource.url = jdbc:mysql://localhost/:3306/coolmix
+spring.datasource.username: root
+spring.datasource.password: Roseland00
+spring.datasource.driver-class-name: com.mysql.jdbc.Driver

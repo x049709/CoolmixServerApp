@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: coolmix-web-service
+Implementation-Version: 0.1.0
+Archiver-Version: Plexus Archiver
+Built-By: x049709
+Start-Class: com.coolmix.CoolmixApplication
+Implementation-Vendor-Id: com.coolmix
+Spring-Boot-Version: 1.2.2.RELEASE
+Created-By: Apache Maven 3.3.1
+Build-Jdk: 1.8.0_60
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: org.springframework.boot.loader.JarLauncher
+

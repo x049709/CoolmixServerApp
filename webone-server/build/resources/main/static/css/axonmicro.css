@@ -1,0 +1,35 @@
+<style type="text/css">
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none !important;
+}
+
+body {
+    font-family: Avenir, sans-serif;
+    font-size: 14px;
+    padding: 10px 10px 10px 30px;
+}
+
+p {
+     font-size: 14px;
+}
+
+
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+    background-color: #B2D1DB;
+}
+
+.table-scrollable {
+    overflow: auto;
+}
+
+.table-scrollable > table {
+    table-layout: fixed;
+}
+
+.table-scrollable td {
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+</style>

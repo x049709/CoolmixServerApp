@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="demo"/>
+<aop-project name="coolmix-server"/>
+<aop-project name="springjpa"/>
+<aop-project name="jdbc-security-server"/>
+<aop-project name="spring-boot-web-jsp"/>
+<aop-project name="webone-server"/>
+<aop-project name="oauth2-server"/>
+</aop-reference-model>

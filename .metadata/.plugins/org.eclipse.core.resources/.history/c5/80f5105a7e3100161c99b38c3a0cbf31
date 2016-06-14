@@ -1,0 +1,12 @@
+package com.coolmix.service;
+
+import java.util.List; 
+import com.coolmix.model.Gsr; 
+ 
+public interface GSRService {
+     
+    Gsr findById(long id);
+ 
+    List<Gsr> findAllGsrs(); 
+          
+}

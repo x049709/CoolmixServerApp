@@ -1,0 +1,32 @@
+package com.coolmix;
+
+import java.util.List;
+import org.springframework.web.client.RestTemplate;
+import com.tellem.springjpa.User;
+ 
+public class CoolmixTestClient {
+ 
+    public static final String REST_SERVICE_URI = "http://localhost:8080";
+         
+    /* GET */
+    @SuppressWarnings("unchecked")
+    private static void listAllUsers(){
+        System.out.println("Testing listAllUsers API-----------");
+         
+        RestTemplate restTemplate = new RestTemplate();
+        List<User> userList = restTemplate.getForObject(REST_SERVICE_URI+"/get-all-by-email/", List.class);
+         
+        if(userList!=null){
+            for(User map : userList){
+                System.out.println("User : id="+map.getId()+", Name="+map.getUsername()+", Age="+map.getEmail());;
+            }
+        }else{
+            System.out.println("No user exist----------");
+        }
+    }
+     
+ 
+    public static void main(String args[]){
+        listAllUsers();
+    }
+}

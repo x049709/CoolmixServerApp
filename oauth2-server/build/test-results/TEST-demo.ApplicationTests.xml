@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.ApplicationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-12-10T03:31:51" hostname="EdBayudansMini.home" time="0.776">
+  <properties/>
+  <testcase name="userEndpointProtected" classname="demo.ApplicationTests" time="0.428"/>
+  <testcase name="authorizationRedirects" classname="demo.ApplicationTests" time="0.034"/>
+  <testcase name="homePageProtected" classname="demo.ApplicationTests" time="0.025"/>
+  <testcase name="loginSucceeds" classname="demo.ApplicationTests" time="0.262"/>
+  <system-out><![CDATA[22:31:41.062 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class demo.ApplicationTests].
+22:31:41.078 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+22:31:41.109 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@590aa95a declaringClass = 'demo.ApplicationTests', classes = '{class demo.AuthserverApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+22:31:41.119 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [demo.ApplicationTests]
+22:31:41.128 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+22:31:41.130 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+22:31:41.131 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@404483f6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1f2d868, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48ecf699]
+22:31:41.136 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:31:41.137 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:31:41.142 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:31:41.142 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:31:41.144 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:31:41.145 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:31:41.148 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [demo.ApplicationTests]
+22:31:41.151 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [demo.ApplicationTests]
+22:31:42.263 [Test worker] DEBUG o.s.test.util.ReflectionTestUtils - Getting field [mergedContextConfiguration] from target [[DefaultTestContext@42be9fbc testClass = ApplicationTests, testInstance = demo.ApplicationTests@5e556c0f, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@669fb96a testClass = ApplicationTests, locations = '{}', classes = '{class demo.AuthserverApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]]
+22:31:42.271 [Test worker] DEBUG o.s.test.util.ReflectionTestUtils - Setting field [propertySourceProperties] of type [null] on target [[WebMergedContextConfiguration@669fb96a testClass = ApplicationTests, locations = '{}', classes = '{class demo.AuthserverApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] to value [[Ljava.lang.String;@476ab080]
+22:31:42.273 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@42be9fbc testClass = ApplicationTests, testInstance = demo.ApplicationTests@5e556c0f, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@669fb96a testClass = ApplicationTests, locations = '{}', classes = '{class demo.AuthserverApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{server.port:0, org.springframework.boot.test.IntegrationTest=true}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+22:31:42.434 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+22:31:42.437 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+22:31:42.438 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+22:31:42.439 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.2.RELEASE)
+
+2015-12-09 22:31:42.932  INFO 83557 --- [    Test worker] o.s.boot.SpringApplication               : Starting application on EdBayudansMini.home with PID 83557 (/Users/x049709/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.2.2.RELEASE/c2495d6c08c742743366f50e25ad76f5dfcd9f75/spring-boot-1.2.2.RELEASE.jar started by x049709 in /Users/x049709/Documents/STSThirteenWorkspace/oauth-microservices/support/oauth2-server)
+2015-12-09 22:31:43.027  INFO 83557 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35b74840: startup date [Wed Dec 09 22:31:43 EST 2015]; root of context hierarchy
+2015-12-09 22:31:44.948  INFO 83557 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-12-09 22:31:45.010  INFO 83557 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+2015-12-09 22:31:46.647  INFO 83557 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2015-12-09 22:31:47.117  INFO 83557 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-12-09 22:31:47.120  INFO 83557 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2015-12-09 22:31:47.374  INFO 83557 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/uaa]    : Initializing Spring embedded WebApplicationContext
+2015-12-09 22:31:47.377  INFO 83557 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4355 ms
+2015-12-09 22:31:48.663 DEBUG 83557 --- [ost-startStop-1] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {org.springframework.security.config.annotation.web.servlet.configuration.WebMvcSecurityConfiguration=org.springframework.security.config.annotation.web.servlet.configuration.WebMvcSecurityConfiguration$$EnhancerBySpringCGLIB$$464540fd@9cee615, org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$WebMvcSecurityConfigurationConditions$DefaultWebMvcSecurityConfiguration=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$WebMvcSecurityConfigurationConditions$DefaultWebMvcSecurityConfiguration$$EnhancerBySpringCGLIB$$c469f9ee@6ab6a8c4}
+2015-12-09 22:31:48.918  INFO 83557 --- [ost-startStop-1] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Signing and verification RSA keys match
+2015-12-09 22:31:49.924  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.926  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.927  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.930  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2015-12-09 22:31:49.932  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.933  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.936  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/shutdown],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2015-12-09 22:31:49.939  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2015-12-09 22:31:49.940  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.941  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.942  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:49.943  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2015-12-09 22:31:49.944  INFO 83557 --- [ost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2015-12-09 22:31:50.238 DEBUG 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35b74840: startup date [Wed Dec 09 22:31:43 EST 2015]; root of context hierarchy
+2015-12-09 22:31:50.260  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/authorize],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.authorize(java.util.Map<java.lang.String, java.lang.Object>,java.util.Map<java.lang.String, java.lang.String>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
+2015-12-09 22:31:50.261  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/authorize],methods=[POST],params=[user_oauth_approval],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.View org.springframework.security.oauth2.provider.endpoint.AuthorizationEndpoint.approveOrDeny(java.util.Map<java.lang.String, java.lang.String>,java.util.Map<java.lang.String, ?>,org.springframework.web.bind.support.SessionStatus,java.security.Principal)
+2015-12-09 22:31:50.265  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.getAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2015-12-09 22:31:50.268  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2015-12-09 22:31:50.271  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/check_token],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, ?> org.springframework.security.oauth2.provider.endpoint.CheckTokenEndpoint.checkToken(java.lang.String)
+2015-12-09 22:31:50.273  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/confirm_access],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelApprovalEndpoint.getAccessConfirmation(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2015-12-09 22:31:50.277  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.security.oauth2.provider.endpoint.WhitelabelErrorEndpoint.handleError(javax.servlet.http.HttpServletRequest)
+2015-12-09 22:31:50.288  INFO 83557 --- [ost-startStop-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Mapped "{[/oauth/token_key],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.security.oauth2.provider.endpoint.TokenKeyEndpoint.getKey(java.security.Principal)
+2015-12-09 22:31:50.336  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2015-12-09 22:31:50.336  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2015-12-09 22:31:50.337  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2015-12-09 22:31:50.337  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2015-12-09 22:31:50.338  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2015-12-09 22:31:50.376 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for org.springframework.security.config.annotation.web.configurers.PermitAllSupport$ExactUrlRequestMatcher@5f1a47a9
+2015-12-09 22:31:50.379 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for org.springframework.security.config.annotation.web.configurers.PermitAllSupport$ExactUrlRequestMatcher@5b574923
+2015-12-09 22:31:50.380 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for org.springframework.security.config.annotation.web.configurers.PermitAllSupport$ExactUrlRequestMatcher@3b63fc82
+2015-12-09 22:31:50.381 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-12-09 22:31:50.389 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.391 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.392  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/login'], Ant [pattern='/oauth/authorize'], Ant [pattern='/oauth/confirm_access']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31604ae3, org.springframework.security.web.context.SecurityContextPersistenceFilter@75eb02e5, org.springframework.security.web.header.HeaderWriterFilter@723fb4c3, org.springframework.security.web.csrf.CsrfFilter@497128e3, org.springframework.security.web.authentication.logout.LogoutFilter@6524357c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@676c74b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@280f694b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@271c095f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ae6b499, org.springframework.security.web.session.SessionManagementFilter@1c8bbe89, org.springframework.security.web.access.ExceptionTranslationFilter@3b8a8710, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1da1b196]
+2015-12-09 22:31:50.398 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'fullyAuthenticated', for Ant [pattern='/oauth/token']
+2015-12-09 22:31:50.399 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll()', for Ant [pattern='/oauth/token_key']
+2015-12-09 22:31:50.400 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'isAuthenticated()', for Ant [pattern='/oauth/check_token']
+2015-12-09 22:31:50.401 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.402 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.405  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ad13c3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@45ad5434, org.springframework.security.web.header.HeaderWriterFilter@13ba3de8, org.springframework.security.web.authentication.logout.LogoutFilter@1551f4a0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4016573c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cf4dfde, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e63f0d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dd3689c, org.springframework.security.web.session.SessionManagementFilter@1f8e9afb, org.springframework.security.web.access.ExceptionTranslationFilter@233b536c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7126dc69]
+2015-12-09 22:31:50.421 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-12-09 22:31:50.422 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.422 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.423  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@7f5768f1]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29153840, org.springframework.security.web.context.SecurityContextPersistenceFilter@12ae6863, org.springframework.security.web.header.HeaderWriterFilter@6cd21afc, org.springframework.security.web.authentication.logout.LogoutFilter@202859b3, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@67ee4943, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cd50d74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40acf5e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@383356d0, org.springframework.security.web.session.SessionManagementFilter@4164300e, org.springframework.security.web.access.ExceptionTranslationFilter@1bc6b270, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a6690af]
+2015-12-09 22:31:50.427 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/info']
+2015-12-09 22:31:50.427 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/info/**']
+2015-12-09 22:31:50.429 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/info.*']
+2015-12-09 22:31:50.429 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/health']
+2015-12-09 22:31:50.430 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/health/**']
+2015-12-09 22:31:50.430 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/health.*']
+2015-12-09 22:31:50.432 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_ADMIN')', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-12-09 22:31:50.433 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.434 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.435  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/info'], Ant [pattern='/info/**'], Ant [pattern='/info.*'], Ant [pattern='/health'], Ant [pattern='/health/**'], Ant [pattern='/health.*'], Ant [pattern='/beans'], Ant [pattern='/beans/**'], Ant [pattern='/beans.*'], Ant [pattern='/trace'], Ant [pattern='/trace/**'], Ant [pattern='/trace.*'], Ant [pattern='/mappings'], Ant [pattern='/mappings/**'], Ant [pattern='/mappings.*'], Ant [pattern='/configprops'], Ant [pattern='/configprops/**'], Ant [pattern='/configprops.*'], Ant [pattern='/shutdown'], Ant [pattern='/shutdown/**'], Ant [pattern='/shutdown.*'], Ant [pattern='/env'], Ant [pattern='/env/**'], Ant [pattern='/env.*'], Ant [pattern='/dump'], Ant [pattern='/dump/**'], Ant [pattern='/dump.*'], Ant [pattern='/autoconfig'], Ant [pattern='/autoconfig/**'], Ant [pattern='/autoconfig.*'], Ant [pattern='/metrics'], Ant [pattern='/metrics/**'], Ant [pattern='/metrics.*']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30775215, org.springframework.security.web.context.SecurityContextPersistenceFilter@72cf4f1a, org.springframework.security.web.header.HeaderWriterFilter@7bfe2dad, org.springframework.security.web.authentication.logout.LogoutFilter@5de87bf5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@339fb10a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76147ff2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c0db7d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bb88adb, org.springframework.security.web.session.SessionManagementFilter@4fbddf2b, org.springframework.security.web.access.ExceptionTranslationFilter@2b55f140, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7df85bd0]
+2015-12-09 22:31:50.439 DEBUG 83557 --- [ost-startStop-1] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasAnyRole('ROLE_USER','ROLE_ADMIN')', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2015-12-09 22:31:50.440 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.441 DEBUG 83557 --- [ost-startStop-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2015-12-09 22:31:50.441  INFO 83557 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27245438, org.springframework.security.web.context.SecurityContextPersistenceFilter@4692789b, org.springframework.security.web.header.HeaderWriterFilter@1cf8471d, org.springframework.security.web.authentication.logout.LogoutFilter@1568dc80, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@40eb2816, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ced2f43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32f34d6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ed7c2cb, org.springframework.security.web.session.SessionManagementFilter@a4f309, org.springframework.security.web.access.ExceptionTranslationFilter@2050a00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e167074]
+2015-12-09 22:31:50.662  INFO 83557 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2015-12-09 22:31:50.664  INFO 83557 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-12-09 22:31:50.664  INFO 83557 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2015-12-09 22:31:50.665  INFO 83557 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2015-12-09 22:31:50.667  INFO 83557 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-12-09 22:31:50.668  INFO 83557 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2015-12-09 22:31:50.669  INFO 83557 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-12-09 22:31:50.733 DEBUG 83557 --- [ost-startStop-1] o.s.security.web.FilterChainProxy        : Initializing filter 'springSecurityFilterChain'
+2015-12-09 22:31:50.734 DEBUG 83557 --- [ost-startStop-1] o.s.security.web.FilterChainProxy        : Filter 'springSecurityFilterChain' configured successfully
+2015-12-09 22:31:51.210  INFO 83557 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35b74840: startup date [Wed Dec 09 22:31:43 EST 2015]; root of context hierarchy
+2015-12-09 22:31:51.267  INFO 83557 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.security.Principal demo.AuthserverApplication.user(java.security.Principal)
+2015-12-09 22:31:51.270  INFO 83557 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-12-09 22:31:51.274  INFO 83557 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-12-09 22:31:51.297  INFO 83557 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-12-09 22:31:51.298  INFO 83557 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/oauth/confirm_access] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-12-09 22:31:51.312  INFO 83557 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09 22:31:51.313  INFO 83557 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09 22:31:51.370  INFO 83557 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-09 22:31:51.621  INFO 83557 --- [    Test worker] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2015-12-09 22:31:51.761  INFO 83557 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 55103 (http)
+2015-12-09 22:31:51.769  INFO 83557 --- [    Test worker] o.s.boot.SpringApplication               : Started application in 9.285 seconds (JVM running for 12.387)
+2015-12-09 22:31:51.984  INFO 83557 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/uaa]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-12-09 22:31:51.984  INFO 83557 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-12-09 22:31:52.010  INFO 83557 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2015-12-09 22:31:52.030 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/css/**'
+2015-12-09 22:31:52.031 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/js/**'
+2015-12-09 22:31:52.031 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/images/**'
+2015-12-09 22:31:52.031 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/**/favicon.ico'
+2015-12-09 22:31:52.034 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/error'
+2015-12-09 22:31:52.034 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/login']
+2015-12-09 22:31:52.035 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/login'
+2015-12-09 22:31:52.036 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/authorize']
+2015-12-09 22:31:52.036 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/oauth/authorize'
+2015-12-09 22:31:52.037 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/confirm_access']
+2015-12-09 22:31:52.037 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/oauth/confirm_access'
+2015-12-09 22:31:52.038 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:31:52.038 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token']
+2015-12-09 22:31:52.039 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/oauth/token'
+2015-12-09 22:31:52.039 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token_key']
+2015-12-09 22:31:52.039 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/oauth/token_key'
+2015-12-09 22:31:52.040 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/check_token']
+2015-12-09 22:31:52.040 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/oauth/check_token'
+2015-12-09 22:31:52.040 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:31:52.040 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@7f5768f1
+2015-12-09 22:31:52.041 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2015-12-09 22:31:52.042 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:31:52.044 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:31:52.046 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:31:52.046 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@83dbba3
+2015-12-09 22:31:52.047 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:31:52.047 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2015-12-09 22:31:52.047 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter'
+2015-12-09 22:31:52.048 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2015-12-09 22:31:52.048 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2015-12-09 22:31:52.048 DEBUG 83557 --- [o-auto-1-exec-1] p.a.OAuth2AuthenticationProcessingFilter : No token in request, will continue chain.
+2015-12-09 22:31:52.048 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:31:52.049 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:31:52.052 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:31:52.056 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:31:52.057 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:31:52.058 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:31:52.059 DEBUG 83557 --- [o-auto-1-exec-1] o.s.security.web.FilterChainProxy        : /user at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:31:52.061 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /user; Attributes: [#oauth2.throwOnError(authenticated)]
+2015-12-09 22:31:52.061 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2015-12-09 22:31:52.070 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@4b157356, returned: -1
+2015-12-09 22:31:52.077  INFO 83557 --- [o-auto-1-exec-1] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:31:52 EST 2015, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+2015-12-09 22:31:52.086 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:83)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:206)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilterInternal(MetricFilterAutoConfiguration.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-12-09 22:31:52.092 DEBUG 83557 --- [o-auto-1-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2015-12-09 22:31:52.189 DEBUG 83557 --- [o-auto-1-exec-1] s.s.o.p.e.DefaultOAuth2ExceptionRenderer : Written [error="unauthorized", error_description="Full authentication is required to access this resource"] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f8b7f2]
+2015-12-09 22:31:52.190 DEBUG 83557 --- [o-auto-1-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2015-12-09 22:31:52.197  WARN 83557 --- [    Test worker] o.s.boot.test.TestRestTemplate           : GET request for "http://localhost:55103/uaa/user" resulted in 401 (Unauthorized); invoking error handler
+2015-12-09 22:31:52.216 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/css/**'
+2015-12-09 22:31:52.216 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/js/**'
+2015-12-09 22:31:52.216 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/images/**'
+2015-12-09 22:31:52.216 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/**/favicon.ico'
+2015-12-09 22:31:52.216 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/error'
+2015-12-09 22:31:52.216 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/login']
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/login'
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/authorize']
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/oauth/authorize'
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2015-12-09 22:31:52.217 DEBUG 83557 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-12-09 22:31:52.221 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:31:52.222 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@74e04606
+2015-12-09 22:31:52.222 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:31:52.224 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:31:52.225 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /oauth/authorize' doesn't match 'POST /logout
+2015-12-09 22:31:52.225 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-12-09 22:31:52.225 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /oauth/authorize' doesn't match 'POST /login
+2015-12-09 22:31:52.225 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:31:52.225 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:31:52.226 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:31:52.226 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:31:52.226 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:31:52.226 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:31:52.226 DEBUG 83557 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /oauth/authorize at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:31:52.227 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /oauth/authorize; Attributes: [authenticated]
+2015-12-09 22:31:52.227 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2015-12-09 22:31:52.227 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@28ffa43c, returned: -1
+2015-12-09 22:31:52.227  INFO 83557 --- [o-auto-1-exec-2] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:31:52 EST 2015, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+2015-12-09 22:31:52.229 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:83)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:206)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:199)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilterInternal(MetricFilterAutoConfiguration.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-12-09 22:31:52.230 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using Ant [pattern='/**', GET]
+2015-12-09 22:31:52.230 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/oauth/authorize' matched by universal pattern '/**'
+2015-12-09 22:31:52.230 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=Ant [pattern='/**/favicon.ico']]
+2015-12-09 22:31:52.230 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/authorize'; against '/**/favicon.ico'
+2015-12-09 22:31:52.230 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
+2015-12-09 22:31:52.230 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@77034817, matchingMediaTypes=[application/json], useEquals=false, ignoredMediaTypes=[*/*]]]
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : httpRequestMediaTypes=[text/plain, application/json, application/*+json, */*]
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing text/plain
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith text/plain = false
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing application/json
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith application/json = true
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = false
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Did not match
+2015-12-09 22:31:52.233 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Request not saved as configured RequestMatcher did not match
+2015-12-09 22:31:52.234 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2015-12-09 22:31:52.235 DEBUG 83557 --- [o-auto-1-exec-2] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost:55103/uaa/login'
+2015-12-09 22:31:52.235 DEBUG 83557 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-12-09 22:31:52.236 DEBUG 83557 --- [o-auto-1-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2015-12-09 22:31:52.261 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/css/**'
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/js/**'
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/images/**'
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/**/favicon.ico'
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/error'
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/login']
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/login'
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/authorize']
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/oauth/authorize'
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/confirm_access']
+2015-12-09 22:31:52.262 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/oauth/confirm_access'
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token']
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/oauth/token'
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token_key']
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/oauth/token_key'
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/check_token']
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/oauth/check_token'
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@7f5768f1
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:31:52.263 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@83dbba3
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/logout'
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter'
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in headers. Trying request parameters.
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.o.p.a.BearerTokenExtractor         : Token not found in request parameters.  Not an OAuth2 request.
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] p.a.OAuth2AuthenticationProcessingFilter : No token in request, will continue chain.
+2015-12-09 22:31:52.264 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:31:52.265 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:31:52.265 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:31:52.265 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:31:52.265 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:31:52.265 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:31:52.265 DEBUG 83557 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : / at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:31:52.265 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /; Attributes: [#oauth2.throwOnError(authenticated)]
+2015-12-09 22:31:52.266 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2015-12-09 22:31:52.266 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@4b157356, returned: -1
+2015-12-09 22:31:52.267  INFO 83557 --- [o-auto-1-exec-3] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:31:52 EST 2015, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]
+2015-12-09 22:31:52.268 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:83)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:206)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:154)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.boot.actuate.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilterInternal(MetricFilterAutoConfiguration.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1558)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1515)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-12-09 22:31:52.270 DEBUG 83557 --- [o-auto-1-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2015-12-09 22:31:52.272 DEBUG 83557 --- [o-auto-1-exec-3] s.s.o.p.e.DefaultOAuth2ExceptionRenderer : Written [error="unauthorized", error_description="Full authentication is required to access this resource"] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f8b7f2]
+2015-12-09 22:31:52.273 DEBUG 83557 --- [o-auto-1-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2015-12-09 22:31:52.281  WARN 83557 --- [    Test worker] o.s.boot.test.TestRestTemplate           : GET request for "http://localhost:55103/uaa/" resulted in 401 (Unauthorized); invoking error handler
+2015-12-09 22:31:52.293 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/css/**'
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/js/**'
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/images/**'
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/**/favicon.ico'
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/error'
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/login']
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2015-12-09 22:31:52.294 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@74e04606
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /login' doesn't match 'POST /logout
+2015-12-09 22:31:52.295 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /login' doesn't match 'POST /login
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2015-12-09 22:31:52.296 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2015-12-09 22:31:52.297 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /login; Attributes: [permitAll]
+2015-12-09 22:31:52.297 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2015-12-09 22:31:52.297 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@28ffa43c, returned: 1
+2015-12-09 22:31:52.298 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2015-12-09 22:31:52.298 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2015-12-09 22:31:52.298 DEBUG 83557 --- [o-auto-1-exec-4] o.s.security.web.FilterChainProxy        : /login reached end of additional filter chain; proceeding with original chain
+2015-12-09 22:31:52.467 DEBUG 83557 --- [o-auto-1-exec-4] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2015-12-09 22:31:52.473 DEBUG 83557 --- [o-auto-1-exec-4] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2015-12-09 22:31:52.474 DEBUG 83557 --- [o-auto-1-exec-4] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2015-12-09 22:31:52.525 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/css/**'
+2015-12-09 22:31:52.525 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/js/**'
+2015-12-09 22:31:52.525 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/images/**'
+2015-12-09 22:31:52.525 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/**/favicon.ico'
+2015-12-09 22:31:52.525 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/error'
+2015-12-09 22:31:52.525 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/login']
+2015-12-09 22:31:52.525 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] w.c.HttpSessionSecurityContextRepository : HttpSession returned null object for SPRING_SECURITY_CONTEXT
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: org.apache.catalina.session.StandardSessionFacade@4262fdf7. A new one will be created.
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@74e04606
+2015-12-09 22:31:52.526 DEBUG 83557 --- [o-auto-1-exec-5] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2015-12-09 22:31:52.527 DEBUG 83557 --- [o-auto-1-exec-5] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2015-12-09 22:31:52.527 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2015-12-09 22:31:52.527 DEBUG 83557 --- [o-auto-1-exec-5] o.s.security.web.FilterChainProxy        : /login at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2015-12-09 22:31:52.527 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2015-12-09 22:31:52.528 DEBUG 83557 --- [o-auto-1-exec-5] w.a.UsernamePasswordAuthenticationFilter : Request is to process authentication
+2015-12-09 22:31:52.528 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2015-12-09 22:31:52.534  INFO 83557 --- [o-auto-1-exec-5] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:31:52 EST 2015, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: DA5532C544861E498CDE455BE7E2DEE3}]
+2015-12-09 22:31:52.534  INFO 83557 --- [o-auto-1-exec-5] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:31:52 EST 2015, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: DA5532C544861E498CDE455BE7E2DEE3}]
+2015-12-09 22:31:52.535 DEBUG 83557 --- [o-auto-1-exec-5] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@2134f8b1
+2015-12-09 22:31:52.536 DEBUG 83557 --- [o-auto-1-exec-5] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.csrf.CsrfAuthenticationStrategy@6db7eebf
+2015-12-09 22:31:52.541 DEBUG 83557 --- [o-auto-1-exec-5] w.a.UsernamePasswordAuthenticationFilter : Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@fb758a25: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN,ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: DA5532C544861E498CDE455BE7E2DEE3; Granted Authorities: ROLE_ADMIN, ROLE_USER
+2015-12-09 22:31:52.542  INFO 83557 --- [o-auto-1-exec-5] o.s.b.a.audit.listener.AuditListener     : AuditEvent [timestamp=Wed Dec 09 22:31:52 EST 2015, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: DA5532C544861E498CDE455BE7E2DEE3}]
+2015-12-09 22:31:52.542 DEBUG 83557 --- [o-auto-1-exec-5] RequestAwareAuthenticationSuccessHandler : Using default Url: /
+2015-12-09 22:31:52.543 DEBUG 83557 --- [o-auto-1-exec-5] o.s.s.web.DefaultRedirectStrategy        : Redirecting to '/uaa/'
+2015-12-09 22:31:52.543 DEBUG 83557 --- [o-auto-1-exec-5] w.c.HttpSessionSecurityContextRepository : SecurityContext stored to HttpSession: 'org.springframework.security.core.context.SecurityContextImpl@fb758a25: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@fb758a25: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN,ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: DA5532C544861E498CDE455BE7E2DEE3; Granted Authorities: ROLE_ADMIN, ROLE_USER'
+2015-12-09 22:31:52.543 DEBUG 83557 --- [o-auto-1-exec-5] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

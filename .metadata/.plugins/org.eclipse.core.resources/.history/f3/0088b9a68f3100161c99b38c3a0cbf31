@@ -1,0 +1,59 @@
+
+package com.coolmix.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.SimpleDriverDataSource;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import com.coolmix.service.GsrService;
+
+import scala.annotation.meta.setter;
+
+import com.coolmix.model.Gsr;
+import com.coolmix.model.User;
+
+@Service("gsrService")
+@Transactional
+public class GsrServiceImpl implements GsrService{
+    SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
+    dataSource.setDriver(new com.mysql.jdbc.Driver());
+    dataSource.setDriver(new com.mysql.jdbc.Driver();
+    dataSource.setUrl("jdbc:mysql://localhost/contactdb");
+    dataSource.setUsername("root");
+    dataSource.setPassword("P@ssw0rd");
+     
+    JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+
+
+	private static final AtomicLong counter = new AtomicLong();     
+	private JdbcTemplate jdbcTemplateObject;
+
+	public List<Gsr> findAllGsrs() {
+		String sql = "SELECT * FROM gsr";
+		@SuppressWarnings({ "rawtypes", "unchecked" })
+		BeanPropertyRowMapper bprm = new BeanPropertyRowMapper(Gsr.class);
+		List<Gsr>gsrList  = getJdbcTemplate().query(sql, bprm);
+		return gsrList;
+		
+		List<User> users = new ArrayList<User>();
+		users.add(new User(counter.incrementAndGet(),"Sam",30, "sam@coolimx.com"));
+		users.add(new User(counter.incrementAndGet(),"Tom",40, "tom@coolimx.com"));
+		users.add(new User(counter.incrementAndGet(),"Jerome",45, "jerome@coolimx.com"));
+		users.add(new User(counter.incrementAndGet(),"Silvia",50, "silvia@coolimx.com"));
+		return users;
+
+	}
+
+	public Gsr findById(int id) {
+		String sql = "SELECT * FROM gsr WHERE id = ?";
+		@SuppressWarnings({ "rawtypes", "unchecked" })
+		Gsr gsr = (Gsr)jdbcTemplateObject.queryForObject(sql, new Object[] { id }, new BeanPropertyRowMapper(Gsr.class));
+		return gsr;
+	}
+
+}

@@ -1,0 +1,50 @@
+<div ng-show="authenticated" class="table-responsive">
+	<div id="userListDiv">
+   		<div class="row">
+      		<div class="col-sm-4" >
+        		<h3 class="panel-title pull-left">List of Axon Users (as of {{currentDate | date:'MM-dd-yyyy'}})</h3>
+      		</div>
+      		<div class="col-sm-8" >
+        		<div class="btn-group  pull-right">
+          			<button id="btnAddNewUser" name="btnAddNewUser" type="button" class="btn btn-primary"  ng-click="addNewUser()"><span class="glyphicon glyphicon-user"></span> Create new user</button>
+         		</div>
+      			<div class="clearfix"></div>
+      		</div>
+    	</div>    
+  		<br/>
+      	<table id="userListTable" class="table table-striped table-bordered table-condensed table-hover table-scrollable">
+      		<thead>
+        		<tr>
+          			<th>User ID</th>
+          			<th>First Name</th>
+          			<th>Last Name</th>
+          			<th>Email Address</th>
+          			<th>Date of Birth</th>
+          			<th>SSN</th>
+          			<th>Employee #</th>
+        		</tr>
+      		</thead>
+      		<tbody>
+        		<tr ng-repeat="user in userList">
+        			<td><a data-toggle="pill" href="" ng-click="editUser(user)">{{user.user_id}}</a></td>
+        			<td>{{user.fname}}</td>
+        			<td>{{user.lname}}</td>
+        			<td>{{user.email}}</td>
+        			<td>{{user.dob | date: "yyyy-MM-dd"}}</td>
+        			<td>{{user.ssn}}</td>
+        			<td>{{user.emplid}}</td>
+        		</tr>
+      		</tbody>
+      	</table>
+  	</div>
+  	<div ng-include="'userdetailform.html'"></div>
+</div>
+
+<div ng-show="authenticated" class="col-sm-12">
+	<h4 ng-show="showUpdateOKMsg">Update successfull!</h4>
+	<h4 ng-show="showUpdateFailedMsg">Update failed (ng-model="updateFailed")!</h4>
+</div>
+
+<div  ng-show="!authenticated">
+	<h2>Login to see User Information...</h2>
+</div>
