@@ -108,7 +108,8 @@ public class UserController {
 	    LOG.info("userApi.getImage: UserId={}", imageName);
 	    String fileLocation = "/srv/www/coolmix/file/images/" + imageName;
         System.out.println("Fetching " + fileLocation);
-	    return new FileSystemResource(fileLocation);
+        FileSystemResource fileSystemResource = new FileSystemResource(fileLocation);
+	    return fileSystemResource;
 	}
 
 
